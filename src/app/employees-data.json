@@ -1,0 +1,81 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "name": "Jhon",
+      "phone": "9999999999",
+      "address": {
+        "city": "Pune",
+        "address_line1": "ABC road",
+        "address_line2": "XYZ building",
+        "postal_code": "12455"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Jacob",
+      "phone": "AZ99A99PQ9",
+      "address": {
+        "city": "Pune",
+        "address_line1": "PQR road",
+        "address_line2": "ABC building",
+        "postal_code": "13455"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Ari",
+      "phone": "145458522",
+      "address": {
+        "city": "Mumbai",
+        "address_line1": "ABC road",
+        "address_line2": "XYZ building",
+        "postal_code": "12455"
+      }
+    },
+    {
+      "id": "4",
+      "name": "Gayake Vaibhav Vasant",
+      "phone": "8600222218",
+      "address": {
+        "city": "PUNE",
+        "address_line1": "Flat no 206, Building no B8, Xrbia Hinjewadi Township, Near Marunji",
+        "address_line2": "dfgsfgsfs",
+        "postal_code": "411057"
+      }
+    },
+    {
+      "id": "5",
+      "name": "jayesh patil",
+      "phone": "234234325",
+      "address": {
+        "city": "Mumbai",
+        "address_line1": "dfgdfh",
+        "address_line2": "fgdfhdjfdtg rggdj",
+        "postal_code": "232323"
+      }
+    },
+    {
+      "id": "6",
+      "name": "Kanchan Patil",
+      "phone": "12345",
+      "address": {
+        "city": "Mumbai",
+        "address_line1": "sdcbds",
+        "address_line2": "asdfg",
+        "postal_code": "123456"
+      }
+    },
+    {
+      "id": "7",
+      "name": "Ajay patil",
+      "phone": "4575384",
+      "address": {
+        "city": "Jalgaon",
+        "address_line1": "dfsgsjkkl",
+        "address_line2": "dfbdkdjk",
+        "postal_code": "2342"
+      }
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+<div class="container mt-5">
+    <h2>List of Employees</h2>
+    <div>
+        <a routerLink="employee/add" class="btn btn-primary">Add</a>
+    </div>
+    <div>
+        <input type="text" [(ngModel)]="searchName">
+    </div>
+    <table class="table">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>City</th>
+            <th>Address 1</th>
+            <th>Address 2</th>
+            <th>Postal Code</th>
+            <th>Action</th>
+        </tr>
+        <tr *ngFor="let key of employees | filter: searchName">
+           <td>{{key.id}}</td>
+           <td>{{key.name}}</td>
+           <td *ngIf="!checkPhone(key.phone) else elseBlock">{{key.phone}}</td>
+           <ng-template #elseBlock><td>NA</td></ng-template>
+           <td>{{key.address.city}}</td>
+           <td>{{key.address.address_line1}}</td>
+           <td>{{key.address.address_line2}}</td>
+           <td>{{key.address.postal_code}}</td>
+           <td><a [routerLink]="['employee/edit', key.id]">Edit</a></td>
+        </tr>
+    </table>
+</div>

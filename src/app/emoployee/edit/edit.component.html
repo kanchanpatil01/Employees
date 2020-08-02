@@ -1,0 +1,37 @@
+<div class="container mt-5">
+    <h2>{{ header }}</h2>
+
+    <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+        <div class="form-group">
+            <label for="">Id</label>
+            <input type="text" class="form-control" [(ngModel)]="employeeObj.id" name="id">
+        </div>
+        <div class="form-group">
+            <label for="">Name</label>
+            <input type="text" class="form-control" [(ngModel)]="employeeObj.name" name="name">
+        </div>
+        <div class="form-group">
+            <label for="">Phone</label>
+            <input type="text" class="form-control" [(ngModel)]="employeeObj.phone" name="phone">
+        </div>
+        <div class="form-group">
+            <label for="">City</label>
+            <input type="text" class="form-control" [(ngModel)]="employeeObj.address.city" name="city">
+        </div>
+        <div class="form-group">
+            <label for="">Address Line 1</label>
+            <input type="text" class="form-control" [(ngModel)]="employeeObj.address.address_line1" name="address_line1">
+        </div>
+        <div class="form-group">
+            <label for="">Address Line 2</label>
+            <input type="text" class="form-control" [(ngModel)]="employeeObj.address.address_line2" name="address_line2">
+        </div>
+        <div class="form-group">
+            <label for="">Postal Code</label>
+            <input type="text" class="form-control" [(ngModel)]="employeeObj.address.postal_code" name="postal_code">
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary">Save</button>
+        </div>
+    </form>
+</div>
